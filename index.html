@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Speech Reports - 研报总库</title>
+    <style>
+        /* --- 全局样式 --- */
+        :root { --primary-color: #2563eb; --bg-color: #f8fafc; --text-main: #1e293b; --text-sub: #64748b; }
+        body { margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: var(--bg-color); color: var(--text-main); line-height: 1.6; }
+        
+        /* --- 头部 --- */
+        header { background: white; padding: 3rem 1rem; text-align: center; border-bottom: 1px solid #e2e8f0; }
+        header h1 { margin: 0; font-size: 2rem; font-weight: 800; letter-spacing: -0.025em; color: #0f172a; }
+        header p { margin-top: 0.5rem; color: var(--text-sub); font-size: 1.1rem; }
+
+        /* --- 布局容器 --- */
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 1.5rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
+
+        /* --- 卡片样式 --- */
+        .person-card { background: white; border-radius: 16px; padding: 2rem; text-decoration: none; color: inherit; border: 1px solid #e2e8f0; transition: all 0.3s ease; display: flex; flex-direction: column; align-items: center; text-align: center; }
+        .person-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1); border-color: var(--primary-color); }
+        
+        /* 头像圈圈 (用文字代替图片) */
+        .avatar { width: 80px; height: 80px; background: #eff6ff; color: var(--primary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: bold; margin-bottom: 1.5rem; }
+        
+        .name { font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem; color: #0f172a; }
+        .role { font-size: 0.9rem; color: var(--text-sub); background: #f1f5f9; padding: 4px 12px; border-radius: 20px; font-weight: 600; }
+        .arrow { margin-top: 1.5rem; color: var(--primary-color); font-weight: 600; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>AI Leaders Reports</h1>
+        <p>行业领袖演讲与深度研报归档</p>
+    </header>
+
+    <main class="container">
+        <div class="grid" id="card-grid">
+
+            <a href="./ElonMusk/index.html" class="person-card">
+                <div class="avatar">EM</div>
+                <div class="name">Elon Musk</div>
+                <div class="role">Tesla / SpaceX</div>
+                <div class="arrow">查看研报库 &rarr;</div>
+            </a>
+
+            <a href="./LisaSu/index.html" class="person-card">
+                <div class="avatar">LS</div>
+                <div class="name">Lisa Su</div>
+                <div class="role">AMD CEO</div>
+                <div class="arrow">查看研报库 &rarr;</div>
+            </a>
+
+            <a href="./JensenHuang/index.html" class="person-card">
+                <div class="avatar">JH</div>
+                <div class="name">Jensen Huang</div>
+                <div class="role">NVIDIA CEO</div>
+                <div class="arrow">查看研报库 &rarr;</div>
+            </a>
+
+        </div>
+    </main>
+
+</body>
+</html>
