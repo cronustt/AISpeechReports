@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>深度研报</title>
+    <style>
+        :root {
+            --bg-color: #0f1115;
+            --card-bg: #1a1d24;
+            --text-primary: #e0e0e0;
+            --text-secondary: #a0a0a0;
+            --accent-color: #3b82f6;
+            --highlight: #f59e0b;
+            --border-radius: 12px;
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; background-color: var(--bg-color); color: var(--text-primary); line-height: 1.7; margin: 0; padding: 20px; -webkit-font-smoothing: antialiased; }
+        .container { max-width: 800px; margin: 0 auto; }
+        .card { background-color: var(--card-bg); border-radius: var(--border-radius); padding: 24px; margin-bottom: 24px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border: 1px solid rgba(255,255,255,0.05); }
+        h1 { font-size: 26px; font-weight: 700; margin-bottom: 12px; color: #fff; letter-spacing: 0.5px; }
+        h2 { font-size: 19px; font-weight: 600; color: var(--accent-color); margin-top: 0; margin-bottom: 20px; display: flex; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px; }
+        h3 { font-size: 16px; font-weight: 700; color: #fff; margin-top: 24px; margin-bottom: 10px; border-left: 3px solid var(--accent-color); padding-left: 10px; }
+        p { margin-bottom: 16px; font-size: 15px; color: var(--text-secondary); text-align: justify; }
+        strong { color: #fff; font-weight: 600; }
+        ul { padding-left: 20px; margin: 0 0 16px 0; }
+        li { color: var(--text-secondary); margin-bottom: 8px; font-size: 15px; }
+        .tag { display: inline-block; background: rgba(59,130,246,0.15); color: var(--accent-color); padding: 4px 10px; border-radius: 4px; font-size: 12px; margin-bottom: 20px; margin-right: 8px; font-weight: 500; }
+        .quick-read-box { background: rgba(245,158,11,0.08); border: 1px solid rgba(245,158,11,0.2); padding: 20px; border-radius: var(--border-radius); margin-bottom: 24px; }
+        .quick-title { font-size: 15px; font-weight: bold; color: var(--highlight); margin-bottom: 12px; text-transform: uppercase; letter-spacing: 1px; }
+        .quick-item { margin-bottom: 10px; font-size: 14px; display: flex; align-items: baseline; }
+        .quick-label { min-width: 70px; color: #fff; font-weight: bold; margin-right: 10px; }
+        .quick-text { color: var(--text-secondary); }
+        table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+        th, td { text-align: left; padding: 12px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+        th { color: var(--accent-color); font-weight: 600; }
+        td { color: var(--text-secondary); }
+        .action-box { background: rgba(255,255,255,0.03); padding: 15px; border-radius: 8px; margin-top: 15px; }
+        .action-header { font-size: 13px; font-weight: bold; color: #888; margin-bottom: 8px; text-transform: uppercase; }
+        .quote-card { background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.02) 100%); padding: 20px; border-radius: 8px; font-style: italic; color: #fff; font-size: 16px; margin-bottom: 16px; border-left: 3px solid var(--accent-color); }
+        @media (max-width: 600px) { .container { padding: 0; } h1 { font-size: 22px; } table { display: block; overflow-x: auto; } th, td { white-space: nowrap; } }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <div>
+        <span class="tag">AI基础设施</span><span class="tag">芯算力大战</span><span class="tag">生成式浪潮</span>
+        <h1>深度内参：算力爆发引爆AI革命，AMD全面突围</h1>
+        <p style="font-size: 13px; opacity: 0.6; margin-bottom: 30px;">来源：CES 2026 AMD CEO 苏姿丰公开演讲 深度解析</p>
+    </div>
+
+    <div class="quick-read-box">
+        <div class="quick-title">CEO 速读</div>
+        <div class="quick-item">
+            <span class="quick-label">风险警示</span>
+            <span class="quick-text">AI基础设施正遭遇“硅荒 + 能源瓶颈”双重挑战，芯片性能与部署效率将决定胜负。</span>
+        </div>
+        <div class="quick-item">
+            <span class="quick-label">战略机会</span>
+            <span class="quick-text">推理需求爆炸、Agent兴起、“本地推理+私域模型”成为硬件创新新起点。</span>
+        </div>
+        <div class="quick-item">
+            <span class="quick-label">当务之急</span>
+            <span class="quick-text">尽快评估MI400系列及Helios平台在AI推理、成本控制、异构部署中的战略适配性。</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>01 核心判词</h2>
+        <h3>核心判断</h3>
+        <p>苏姿丰明确指出：AI将成为未来几十年全球增长的核心驱动力，而决定AI发展上限的，不是算法，而是算力总量和生产效率。</p>
+        <h3>系统闭环</h3>
+        <p>Agent 从“回答工具”演化为“任务合作者”，算力从“精英云计算”走向“亿级端部署”。这一趋势推动芯片架构、生产工艺、软件生态全链路重构。AMD以Helios重构AI服务器平台，以MI455/MI500重塑训练与推理算力边界，同时借Ryzen AI全力下探本地终端原生AI体验。</p>
+        <h3>关键时间表</h3>
+        <table>
+            <thead><tr><th width="20%">时间点</th><th width="40%">核心事件</th><th width="40%">商业含义</th></tr></thead>
+            <tbody>
+                <tr><td>2024</td><td>Helios平台正式发布</td><td>标志AMD进入完整AI数据中心平台提供商行列</td></tr>
+                <tr><td>2025</td><td>推理数据密度增长百倍</td><td>强推自主可控、低延迟、本地可部署AI需求</td></tr>
+                <tr><td>2026</td><td>Ryzen AI 400/Max全线发布</td><td>PC平台成为AI原生工作场，重构生产力工具路径</td></tr>
+                <tr><td>2027</td><td>MI500系列上线（CDNA6）</td><td>推理&训练性能再跃迁，与NVIDIA拉开分化竞争</td></tr>
+                <tr><td>2028</td><td>美国“Genesis超级计算项目”部署完成</td><td>AI将成为国家级战略资产，主权AI全面加速</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="card">
+        <h2>02 深度拆解</h2>
+        
+        <h3>板块一：AI的算力饥渴症</h3>
+        <p><strong>核心论点：</strong>苏姿丰强调：全社会AI推理密度百倍增长，算力增长需再扩百倍，全球正进入前所未有的“YottaFlop量级竞赛”。</p>
+        <p><strong>底层逻辑：</strong>推理需求被低估；多Agent并发、任务持续时间跨度延长，单位用户平均算力需求爆炸；AI算力将成为新GDP构成因子。</p>
+        <p><strong>数据与实证：</strong></p>
+        <ul>
+            <li><strong>宏观估算：</strong>2022年全球AI算力需求为1 ZettaFlop；2025达100 ZF；2030目标10 YF（10,000倍增长）</li>
+            <li><strong>趋势路径：</strong>OpenAI已连续三年算力翻倍；深入企业/科研/医疗全面爆发</li>
+        </ul>
+        <div class="action-box">
+            <div class="action-header">行动建议</div>
+            <ul style="margin:0; padding-left:20px;">
+                <li><strong>重构</strong> 内部AI战略预算模型，以YottaFlop为单位量尺评估未来3年投入。</li>
+                <li><strong>关注</strong> 推理侧指标Explosion（如token吞吐）而非纯模型参数增速。</li>
+            </ul>
+        </div>
+        <hr style="border:0; border-top:1px dashed rgba(255,255,255,0.1); margin:24px 0;">
+        
+    </div>
+
+    <div class="card">
+        <h2>03 关键概念解码</h2>
+        
+        <h3>1. Yotta Scale (YF规模)</h3>
+        <p><strong>原文释义：</strong>全球AI推理能力需触达10YF（10^24次浮点运算/S）级别，支撑5B+用户Agent并发。</p>
+        <p><strong>商业本质：</strong>算力密度成为资源优势国与企业的“土壤护城河”，基础设施即国力。</p>
+        
+        <h3 style="margin-top:30px;">术语表</h3>
+        <table>
+            <tr><th width="30%">术语</th><th width="70%">解释</th></tr>
+            <tr><td><strong>YF (YottaFlops)</strong></td><td>每秒10的24次方浮点运算，AI基础设施顶级算力衡量单位</td></tr>
+            <tr><td><strong>Agentic Workflows</strong></td><td>AI逐步从“应答模型”过渡为“多任务并行助手”形态</td></tr>
+            <tr><td><strong>Helios</strong></td><td>AMD新一代AI专用超级服务器架构，双42U机架设计</td></tr>
+            <tr><td><strong>MI455</strong></td><td>基于CDNA5的新GPU，集成HBM4 + 2nm/3nm Chiplet封装</td></tr>
+            <tr><td><strong>Ryzen AI</strong></td><td>AMD面向本地AIPC的NPU异构加速平台</td></tr>
+        </table>
+    </div>
+
+    <div class="card">
+        <h2>04 经济与就业终局</h2>
+        <h3>赢家与输家</h3>
+        <ul>
+            <li><strong>输家：</strong> <strong>单点内容创作者 / 没有算力支撑的软件产品</strong>。因Agent/视频模型登场，内容生产规模逆转边际成本。</li>
+            <li><strong>赢家：</strong> <strong>算力掌控方 / AI安全与效率芯片公司</strong>。训练 + 推理 + 数据保密需求打开全新行业天花板。</li>
+        </ul>
+        <h3>CEO 行动清单</h3>
+        <ul>
+            <li><strong>审视</strong> 本企业AI工作负载结构，识别可本地推理/私有部署的场景</li>
+            <li><strong>搭建</strong> 与开源AI软件栈兼容的硬件部署能力（如Rockom生态）</li>
+            <li><strong>固化</strong> 与主权AI产业链上游（高校/政府/私营云）资源协同</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>05 原声金句</h2>
+        <div class="quote-card">“AI 是过去 50 年最具颠覆性的技术，我们只是刚刚开始。” —— 苏姿丰</div>
+        <div class="quote-card">“我们已经进入一个全新的 AI 纪元，在这里，人类意图是最稀缺的资源。” —— Greg Brockman</div>
+        <div class="quote-card">“未来 GDP 增长将由一个国家可调配的算力规模决定。” —— Greg Brockman</div>
+    </div>
+
+</div>
+</body>
+</html>
