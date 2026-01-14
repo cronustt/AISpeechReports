@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>深度研报</title>
+    <style>
+        :root {
+            --bg-color: #0f1115;
+            --card-bg: #1a1d24;
+            --text-primary: #e0e0e0;
+            --text-secondary: #a0a0a0;
+            --accent-color: #3b82f6;
+            --highlight: #f59e0b;
+            --border-radius: 12px;
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; background-color: var(--bg-color); color: var(--text-primary); line-height: 1.7; margin: 0; padding: 20px; -webkit-font-smoothing: antialiased; }
+        .container { max-width: 800px; margin: 0 auto; }
+        .card { background-color: var(--card-bg); border-radius: var(--border-radius); padding: 24px; margin-bottom: 24px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border: 1px solid rgba(255,255,255,0.05); }
+        h1 { font-size: 26px; font-weight: 700; margin-bottom: 12px; color: #fff; letter-spacing: 0.5px; }
+        h2 { font-size: 19px; font-weight: 600; color: var(--accent-color); margin-top: 0; margin-bottom: 20px; display: flex; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px; }
+        h3 { font-size: 16px; font-weight: 700; color: #fff; margin-top: 24px; margin-bottom: 10px; border-left: 3px solid var(--accent-color); padding-left: 10px; }
+        p { margin-bottom: 16px; font-size: 15px; color: var(--text-secondary); text-align: justify; }
+        strong { color: #fff; font-weight: 600; }
+        ul { padding-left: 20px; margin: 0 0 16px 0; }
+        li { color: var(--text-secondary); margin-bottom: 8px; font-size: 15px; }
+        .tag { display: inline-block; background: rgba(59,130,246,0.15); color: var(--accent-color); padding: 4px 10px; border-radius: 4px; font-size: 12px; margin-bottom: 20px; margin-right: 8px; font-weight: 500; }
+        .quick-read-box { background: rgba(245,158,11,0.08); border: 1px solid rgba(245,158,11,0.2); padding: 20px; border-radius: var(--border-radius); margin-bottom: 24px; }
+        .quick-title { font-size: 15px; font-weight: bold; color: var(--highlight); margin-bottom: 12px; text-transform: uppercase; letter-spacing: 1px; }
+        .quick-item { margin-bottom: 10px; font-size: 14px; display: flex; align-items: baseline; }
+        .quick-label { min-width: 70px; color: #fff; font-weight: bold; margin-right: 10px; }
+        .quick-text { color: var(--text-secondary); }
+        table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+        th, td { text-align: left; padding: 12px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+        th { color: var(--accent-color); font-weight: 600; }
+        td { color: var(--text-secondary); }
+        .action-box { background: rgba(255,255,255,0.03); padding: 15px; border-radius: 8px; margin-top: 15px; }
+        .action-header { font-size: 13px; font-weight: bold; color: #888; margin-bottom: 8px; text-transform: uppercase; }
+        .quote-card { background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.02) 100%); padding: 20px; border-radius: 8px; font-style: italic; color: #fff; font-size: 16px; margin-bottom: 16px; border-left: 3px solid var(--accent-color); }
+        @media (max-width: 600px) { .container { padding: 0; } h1 { font-size: 22px; } table { display: block; overflow-x: auto; } th, td { white-space: nowrap; } }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <div>
+        <span class="tag">AI算力</span><span class="tag">芯片架构</span><span class="tag">Yatoflop时代</span>
+        <h1>深度内参：AMD如何打造通往万亿级AI算力的道路</h1>
+        <p style="font-size: 13px; opacity: 0.6; margin-bottom: 30px;">来源：CES 2026 AMD 苏姿丰主题演讲 深度解析</p>
+    </div>
+
+    <div class="quick-read-box">
+        <div class="quick-title">CEO 速读</div>
+        <div class="quick-item">
+            <span class="quick-label">风险警示</span>
+            <span class="quick-text">全球AI算力需求远超当前供给，形成结构性短缺。</span>
+        </div>
+        <div class="quick-item">
+            <span class="quick-label">战略机会</span>
+            <span class="quick-text">抢滩Yatoflop级基础设施，构建计算“底座”成为未来GPD增长引擎。</span>
+        </div>
+        <div class="quick-item">
+            <span class="quick-label">当务之急</span>
+            <span class="quick-text">构建本地化AI应用栈，布局边缘、PC、机器人、医疗全场景。</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>01 核心判词</h2>
+        <h3>核心判断</h3>
+        <p>苏姿丰明确指出：AI是过去50年最重要的技术，预计五年内全球AI活跃用户将突破50亿，计算需求将激增至10 Yatoflops，传统算力架构无法支撑，AMD将构建AI Everywhere的计算基础。</p>
+
+        <h3>系统闭环</h3>
+        <p>苏姿丰串联起逻辑闭环：指数级AI模型与用户增长 → 带来推理和训练的幂次级算力需求 → AMD通过MI455/Helios实现Yatoflop级弹性算力扩展 → 支撑AI在云端、本地设备、机器人、生成内容等场景加速落地 → 最终推动GPD与科技创新正循环闭环。</p>
+
+        <h3>关键时间表</h3>
+        <table>
+            <thead><tr><th>时间点</th><th>核心事件</th><th>商业含义</th></tr></thead>
+            <tbody>
+                <tr><td>2025年</td><td>AI全球算力需求突破100 ZFlops</td><td>算力进入瓶颈期，供不应求趋势放大</td></tr>
+                <tr><td>2026年</td><td>MI455 / Helios正式量产上市</td><td>Yatoflop时代基础设施开始交付</td></tr>
+                <tr><td>2027年</td><td>MI500系列商业发布</td><td>千倍AI性能跃迁，CDNA 6 + HBM4E支撑更大模型落地</td></tr>
+                <tr><td>2028年</td><td>蓝色起源计划登月，Mark 2将使用AMD平台</td><td>边缘AI能力进入航天系统，AEI进入多模态空间场景</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="card">
+        <h2>02 深度拆解</h2>
+        <h3>板块一：AI算力跃迁的物理极限</h3>
+        <p><strong>核心论点：</strong>苏姿丰指出，AI用户和模型爆发，推动推理和训练算力每年指数级增长，五年内需达10 Yatoflops。</p>
+        <p><strong>底层逻辑：</strong>用户从十亿升至五十亿 → 模型从文本跳至多模态、代理体 → 每轮推理Token飙升 → 带来天量推理GPU和存储带宽需求。</p>
+        <p><strong>数据与实证：</strong></p>
+        <ul>
+            <li><strong>训练计算增长：</strong>近十年每年增长超4倍</li>
+            <li><strong>推理token增长：</strong>二年间提升100倍，达到拐点</li>
+            <li><strong>算力发展路径：</strong>2022年为1 ZFlops → 2025年达100 ZFlops → 2030前目标为10 YFlops</li>
+        </ul>
+        <div class="action-box">
+            <div class="action-header">行动建议</div>
+            <ul>
+                <li><strong>提前锁定</strong> 2026年起MI455、MI500大规模部署窗口期</li>
+                <li><strong>加速评估</strong> 云原生 + 本地离线模型协同推理范式</li>
+            </ul>
+        </div>
+        <hr style="border:0; border-top:1px dashed rgba(255,255,255,0.1); margin:24px 0;">
+    </div>
+
+    <div class="card">
+        <h2>03 关键概念解码</h2>
+        <h3>1. Yatoflop</h3>
+        <p><strong>原文释义：</strong>一个Yatoflop等于1后面跟24个零的计算能力。</p>
+        <p><strong>商业本质：</strong>人类史上从未有任何技术对算力有如此大幅跃升需求，Yatoflop成为新一代基础设施“电力”。</p>
+        
+        <h3 style="margin-top:30px;">术语表</h3>
+        <table>
+            <tr><th>术语</th><th>解释</th></tr>
+            <tr><td><strong>MI455</strong></td><td>AMD最新CDNA架构GPU，支持HBM4，针对大模型推理优化。</td></tr>
+            <tr><td><strong>Helios</strong></td><td>AMD联合Meta推出的开放式双柜AI机架方案，单机支持72 GPU。</td></tr>
+            <tr><td><strong>Rockom</strong></td><td>AMD开源AI软件栈，兼容主流框架如PyTorch、HuggingFace。</td></tr>
+            <tr><td><strong>Ryzen AI</strong></td><td>AMD笔记本/桌面端AIPC处理器，支持本地多模态模型运行。</td></tr>
+            <tr><td><strong>LFM</strong></td><td>Liquid Foundation Model，高效轻量式基础模型，便于本地部署。</td></tr>
+        </table>
+    </div>
+
+    <div class="card">
+        <h2>04 经济与就业终局</h2>
+        <h3>赢家与输家</h3>
+        <ul>
+            <li><strong>输家：</strong> <strong>通用代码/多层中间管理层</strong>。AI代理体可自动编程和决策执行。</li>
+            <li><strong>赢家：</strong> <strong>本地AI应用开发者、GPU基础设施建设商、技术型医疗企业</strong>。数据+算力成为新GPD杠杆。</li>
+        </ul>
+        <h3>CEO 行动清单</h3>
+        <ul>
+            <li><strong>制定</strong> 自身AI算力演进路线图（2025 → 2030）</li>
+            <li><strong>转向</strong> 小团队大能效：代理体+微模型+本地NPU组合式部署框架</li>
+            <li><strong>布局</strong> 联合国家/高校/开源社区参与Genesis等国家级AI科研计划</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>05 原声金句</h2>
+        <div class="quote-card">“AI是过去50年最重要的技术，我们刚刚进入它改写世界的开端。”</div>
+        <div class="quote-card">“我们正迈向一个GDP增长将由某一区域可用算力决定的新时代。”</div>
+        <div class="quote-card">“未来每一款机器人、每个创作者、每位开发者都将拥有本地部署的AI助手。”</div>
+    </div>
+
+</div>
+</body>
+</html>
