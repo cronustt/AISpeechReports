@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>深度研报</title>
+    <style>
+        :root {
+            --bg-color: #0f1115;
+            --card-bg: #1a1d24;
+            --text-primary: #e0e0e0;
+            --text-secondary: #a0a0a0;
+            --accent-color: #3b82f6;
+            --highlight: #f59e0b;
+            --border-radius: 12px;
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; background-color: var(--bg-color); color: var(--text-primary); line-height: 1.7; margin: 0; padding: 20px; -webkit-font-smoothing: antialiased; }
+        .container { max-width: 800px; margin: 0 auto; }
+
+        .card { background-color: var(--card-bg); border-radius: var(--border-radius); padding: 24px; margin-bottom: 24px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border: 1px solid rgba(255,255,255,0.05); }
+
+        h1 { font-size: 26px; font-weight: 700; margin-bottom: 12px; color: #fff; letter-spacing: 0.5px; }
+        h2 { font-size: 19px; font-weight: 600; color: var(--accent-color); margin-top: 0; margin-bottom: 20px; display: flex; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px; }
+        h3 { font-size: 16px; font-weight: 700; color: #fff; margin-top: 24px; margin-bottom: 10px; border-left: 3px solid var(--accent-color); padding-left: 10px; }
+
+        p { margin-bottom: 16px; font-size: 15px; color: var(--text-secondary); text-align: justify; }
+        strong { color: #fff; font-weight: 600; }
+        ul { padding-left: 20px; margin: 0 0 16px 0; }
+        li { color: var(--text-secondary); margin-bottom: 8px; font-size: 15px; }
+
+        .tag { display: inline-block; background: rgba(59,130,246,0.15); color: var(--accent-color); padding: 4px 10px; border-radius: 4px; font-size: 12px; margin-bottom: 20px; margin-right: 8px; font-weight: 500; }
+
+        .quick-read-box { background: rgba(245,158,11,0.08); border: 1px solid rgba(245,158,11,0.2); padding: 20px; border-radius: var(--border-radius); margin-bottom: 24px; }
+        .quick-title { font-size: 15px; font-weight: bold; color: var(--highlight); margin-bottom: 12px; text-transform: uppercase; letter-spacing: 1px; }
+        .quick-item { margin-bottom: 10px; font-size: 14px; display: flex; align-items: baseline; }
+        .quick-label { min-width: 70px; color: #fff; font-weight: bold; margin-right: 10px; }
+        .quick-text { color: var(--text-secondary); }
+
+        table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+        th, td { text-align: left; padding: 12px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+        th { color: var(--accent-color); font-weight: 600; }
+        td { color: var(--text-secondary); }
+
+        .action-box { background: rgba(255,255,255,0.03); padding: 15px; border-radius: 8px; margin-top: 15px; }
+        .action-header { font-size: 13px; font-weight: bold; color: #888; margin-bottom: 8px; text-transform: uppercase; }
+
+        .quote-card { background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.02) 100%); padding: 20px; border-radius: 8px; font-style: italic; color: #fff; font-size: 16px; margin-bottom: 16px; border-left: 3px solid var(--accent-color); }
+
+        @media (max-width: 600px) { .container { padding: 0; } h1 { font-size: 22px; } table { display: block; overflow-x: auto; } th, td { white-space: nowrap; } }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <div>
+        <span class="tag">数据缺失</span><span class="tag">暂无资料</span><span class="tag">待补齐内容</span>
+        <h1>深度内参生成失败：未能获取有效演讲内容</h1>
+        <p style="font-size: 13px; opacity: 0.6; margin-bottom: 30px;">来源：系统调试信息解析反馈</p>
+    </div>
+
+    <div class="quick-read-box">
+        <div class="quick-title">CEO 速读</div>
+        <div class="quick-item">
+            <span class="quick-label">风险警示</span>
+            <span class="quick-text">此次请求未能提供有效原始内容，无法生成有意义的行业洞察。</span>
+        </div>
+        <div class="quick-item">
+            <span class="quick-label">战略机会</span>
+            <span class="quick-text">如能补全原始演讲/稿件资料，将能生成完整深度内参。</span>
+        </div>
+        <div class="quick-item">
+            <span class="quick-label">当务之急</span>
+            <span class="quick-text">请重新检查数据来源或提交更清晰的 Transcript 内容。</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>01 核心判词</h2>
+        <h3>核心判断</h3>
+        <p>文档内容缺失，无法提炼核心结论。</p>
+        <h3>系统闭环</h3>
+        <p>文档未提供任何系统变量、因果模型或趋势判断，无法构建分析链条。</p>
+        <h3>关键时间表</h3>
+        <table>
+            <thead><tr><th width="20%">时间点</th><th width="40%">核心事件</th><th width="40%">商业含义</th></tr></thead>
+            <tbody>
+                <tr><td>暂无</td><td>暂无</td><td>暂无</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="card">
+        <h2>02 深度拆解</h2>
+        <h3>板块一：内容不完整，无法展开分析</h3>
+        <p><strong>核心论点：</strong> 文档未提及核心主张。</p>
+        <p><strong>底层逻辑：</strong> 原始数据缺失，无法建立逻辑链条。</p>
+        <p><strong>数据与实证：</strong></p>
+        <ul>
+            <li><strong>关键数据：</strong> 文档未提供任何可量化指标。</li>
+            <li><strong>项目案例：</strong> 暂无案例可引用。</li>
+        </ul>
+        <div class="action-box">
+            <div class="action-header">行动建议</div>
+            <ul style="margin:0; padding-left:20px;">
+                <li><strong>建议</strong> 核实输入文档是否为完整演讲稿/会议文字实录。</li>
+                <li><strong>建议</strong> 补充具体人物发言或段落内容以支持分析生成。</li>
+            </ul>
+        </div>
+        <hr style="border:0; border-top:1px dashed rgba(255,255,255,0.1); margin:24px 0;">
+    </div>
+
+    <div class="card">
+        <h2>03 关键概念解码</h2>
+        
+        <h3>1. 无法解码概念</h3>
+        <p><strong>原文释义：</strong> 当前文档未提供任何概念定义或指数模型。</p>
+        <p><strong>商业本质：</strong> 不具备分析基础。</p>
+        
+        <h3 style="margin-top:30px;">术语表</h3>
+        <table>
+            <tr><th width="30%">术语</th><th width="70%">解释</th></tr>
+            <tr><td><strong>暂无</strong></td><td>原始文档未提供任何术语。</td></tr>
+        </table>
+    </div>
+
+    <div class="card">
+        <h2>04 经济与就业终局</h2>
+        <h3>赢家与输家</h3>
+        <ul>
+            <li><strong>输家：</strong> 无法识别行业趋势或风险岗位。</li>
+            <li><strong>赢家：</strong> 无法识别受益群体或领域方向。</li>
+        </ul>
+        <h3>CEO 行动清单</h3>
+        <ul>
+            <li><strong>核实</strong> 上游数据源是否具备发言原文。</li>
+            <li><strong>提供</strong> 明确的人物、演讲标题或会议背景，有助进一步评估。</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>05 原声金句</h2>
+        <div class="quote-card">“当前未能获取任何原始语录，无法提炼演讲金句。”</div>
+    </div>
+
+</div>
+</body>
+</html>
