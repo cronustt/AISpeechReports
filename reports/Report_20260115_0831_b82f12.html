@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>深度研报</title>
+    <style>
+        :root {
+            --bg-color: #0f1115;
+            --card-bg: #1a1d24;
+            --text-primary: #e0e0e0;
+            --text-secondary: #a0a0a0;
+            --accent-color: #3b82f6;
+            --highlight: #f59e0b;
+            --border-radius: 12px;
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; background-color: var(--bg-color); color: var(--text-primary); line-height: 1.7; margin: 0; padding: 20px; -webkit-font-smoothing: antialiased; }
+        .container { max-width: 800px; margin: 0 auto; }
+        .card { background-color: var(--card-bg); border-radius: var(--border-radius); padding: 24px; margin-bottom: 24px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border: 1px solid rgba(255,255,255,0.05); }
+        h1 { font-size: 26px; font-weight: 700; margin-bottom: 12px; color: #fff; letter-spacing: 0.5px; }
+        h2 { font-size: 19px; font-weight: 600; color: var(--accent-color); margin-top: 0; margin-bottom: 20px; display: flex; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px; }
+        h3 { font-size: 16px; font-weight: 700; color: #fff; margin-top: 24px; margin-bottom: 10px; border-left: 3px solid var(--accent-color); padding-left: 10px; }
+        p { margin-bottom: 16px; font-size: 15px; color: var(--text-secondary); text-align: justify; }
+        strong { color: #fff; font-weight: 600; }
+        ul { padding-left: 20px; margin: 0 0 16px 0; }
+        li { color: var(--text-secondary); margin-bottom: 8px; font-size: 15px; }
+        .tag { display: inline-block; background: rgba(59,130,246,0.15); color: var(--accent-color); padding: 4px 10px; border-radius: 4px; font-size: 12px; margin-bottom: 20px; margin-right: 8px; font-weight: 500; }
+        .quick-read-box { background: rgba(245,158,11,0.08); border: 1px solid rgba(245,158,11,0.2); padding: 20px; border-radius: var(--border-radius); margin-bottom: 24px; }
+        .quick-title { font-size: 15px; font-weight: bold; color: var(--highlight); margin-bottom: 12px; text-transform: uppercase; letter-spacing: 1px; }
+        .quick-item { margin-bottom: 10px; font-size: 14px; display: flex; align-items: baseline; }
+        .quick-label { min-width: 70px; color: #fff; font-weight: bold; margin-right: 10px; }
+        .quick-text { color: var(--text-secondary); }
+        table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+        th, td { text-align: left; padding: 12px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+        th { color: var(--accent-color); font-weight: 600; }
+        td { color: var(--text-secondary); }
+        .action-box { background: rgba(255,255,255,0.03); padding: 15px; border-radius: 8px; margin-top: 15px; }
+        .action-header { font-size: 13px; font-weight: bold; color: #888; margin-bottom: 8px; text-transform: uppercase; }
+        .quote-card { background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.02) 100%); padding: 20px; border-radius: 8px; font-style: italic; color: #fff; font-size: 16px; margin-bottom: 16px; border-left: 3px solid var(--accent-color); }
+        @media (max-width: 600px) { .container { padding: 0; } h1 { font-size: 22px; } table { display: block; overflow-x: auto; } th, td { white-space: nowrap; } }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <div>
+        <span class="tag">数据缺失</span><span class="tag">未能解析</span><span class="tag">无法生成研报</span>
+        <h1>【警示内参】：数据源缺失，内容无法生成</h1>
+        <p style="font-size: 13px; opacity: 0.6; margin-bottom: 30px;">来源：系统解析失败</p>
+    </div>
+
+    <div class="quick-read-box">
+        <div class="quick-title">CEO 速读</div>
+        <div class="quick-item">
+            <span class="quick-label">风险警示</span>
+            <span class="quick-text">原始文档未包含字幕内容，导致数据完全缺失。</span>
+        </div>
+        <div class="quick-item">
+            <span class="quick-label">战略机会</span>
+            <span class="quick-text">当前暂无信源，无法识别任何战略趋势。</span>
+        </div>
+        <div class="quick-item">
+            <span class="quick-label">当务之急</span>
+            <span class="quick-text">请重新提供包含有效内容（如字幕、演讲摘要）的原始文档。</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>01 核心判词</h2>
+        <h3>核心判断</h3>
+        <p>原始文档中不含字幕或正文内容，因此无法形成任何有效判断。</p>
+        <h3>系统闭环</h3>
+        <p>文档缺失关键变量，无法建立模型闭环或因果链条。</p>
+        <h3>关键时间表</h3>
+        <table>
+            <thead><tr><th width="20%">时间点</th><th width="40%">核心事件</th><th width="40%">商业含义</th></tr></thead>
+            <tbody>
+                <tr><td>暂无</td><td>数据缺失</td><td>内容不可解析</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="card">
+        <h2>02 深度拆解</h2>
+        <h3>板块一：暂无内容</h3>
+        <p><strong>核心论点：</strong> 文档中无明确观点。</p>
+        <p><strong>底层逻辑：</strong> 无法建立逻辑链条。</p>
+        <p><strong>数据与实证：</strong></p>
+        <ul>
+            <li><strong>关键数据：</strong> 数据结构 error，仅提示无字幕。</li>
+            <li><strong>项目案例：</strong> 无实际项目可举。</li>
+        </ul>
+        <div class="action-box">
+            <div class="action-header">行动建议</div>
+            <ul style="margin:0; padding-left:20px;">
+                <li><strong>核查</strong> 提交的数据结构，确保包含有效语料，如演讲实录、字幕文本、会议纪要等。</li>
+                <li><strong>重试</strong> 提交新的文稿或正确的视频字幕结构。</li>
+            </ul>
+        </div>
+        <hr style="border:0; border-top:1px dashed rgba(255,255,255,0.1); margin:24px 0;">
+    </div>
+
+    <div class="card">
+        <h2>03 关键概念解码</h2>
+        <h3>1. 无法提供概念解码</h3>
+        <p><strong>原文释义：</strong> 文档未提供任何术语或概念。</p>
+        <p><strong>商业本质：</strong> 无法展开分析。</p>
+        <h3 style="margin-top:30px;">术语表</h3>
+        <table>
+            <tr><th width="30%">术语</th><th width="70%">解释</th></tr>
+            <tr><td><strong>暂无</strong></td><td>未解析到任何关键词。</td></tr>
+        </table>
+    </div>
+
+    <div class="card">
+        <h2>04 经济与就业终局</h2>
+        <h3>赢家与输家</h3>
+        <ul>
+            <li><strong>输家：</strong> <strong>内容处理方</strong>。无法根据无效输入生成含金量内容。</li>
+            <li><strong>赢家：</strong> <strong>无</strong>。整体文档失效，未能提供变革或趋势线索。</li>
+        </ul>
+        <h3>CEO 行动清单</h3>
+        <ul>
+            <li><strong>审视</strong> 当前数据采集链条，确保结构完整正确。</li>
+            <li><strong>加强</strong> 文档提交验证，避免低质量文本流入分析端。</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>05 原声金句</h2>
+        <div class="quote-card">“原文中无一可引用的陈述。”</div>
+        <div class="quote-card">“若想获得输出，先确保输入有效。”</div>
+        <div class="quote-card">“Garbage in, garbage out——输入即命运。”</div>
+    </div>
+
+</div>
+</body>
+</html>
